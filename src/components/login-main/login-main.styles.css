@@ -1,0 +1,98 @@
+.login-page-main {
+  background: white;
+  padding: 30px 16px;
+}
+
+.login-page-main__image {
+  padding: 0 12px;
+}
+
+.login-page-main__contentAndForm_basicInfo-text {
+  font-size: 18px;
+  color: #152d4e;
+  text-align: center;
+}
+
+.basicInfo_bold {
+  display: inline;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.login-page-main__contentAndForm_basicInfo__chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+.chip {
+  display: inline-block;
+  height: 30px;
+  border-radius: 15px;
+  padding: 6px 14px;
+  margin: 5px 8px;
+}
+
+.chip-1 {
+  background: rgba(241, 124, 43, 0.18);
+  color: #f17c2b;
+}
+
+.chip-2 {
+  background: rgba(150, 54, 143, 0.18);
+  color: #96368f;
+}
+
+.chip-3 {
+  background: rgba(26, 150, 145, 0.18);
+  color: #1a9691;
+}
+
+.chip-4 {
+  background: rgba(230, 49, 131, 0.18);
+  color: #e63183;
+}
+
+.chip-5 {
+  background: rgba(0, 128, 175, 0.17);
+  color: #0080af;
+}
+
+.chip-6 {
+  background: rgba(231, 33, 44, 0.18);
+  color: #e7212c;
+}
+
+.signin_button {
+  margin: 16px 0;
+  width: 100%;
+}
+
+.form_last_elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(min-width:768px) 
+{
+  .login-page-main {
+    display: flex;
+    margin: 30px 9.552vw;
+    border-radius: 10px;
+    padding: 30px 30px 90px;
+    align-items: center;
+  }
+
+  .login-page-main__image {
+    flex: 0.5;
+  }
+
+  .login-page-main__contentAndForm {
+    flex: 0.5;
+  }
+
+  .chip {
+    margin: 0 5px 8px 0;
+  }
+}
