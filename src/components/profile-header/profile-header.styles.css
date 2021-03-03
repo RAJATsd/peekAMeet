@@ -1,0 +1,20 @@
+.profile-header {
+    display: flex;
+    width: 100%;
+    background-image:  linear-gradient(to bottom, #14b349, #09a04f);
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.profile-header-company {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.profile-header-buttons__logout {
+    border: none;
+    border-radius: 4px;
+}
+
+
