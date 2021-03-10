@@ -1,0 +1,40 @@
+.groupCopyImage {
+  width: 100%;
+}
+
+.profile-main-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.myImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.profile-main-user__info {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-main-user__info__ele {
+  margin: 16px 0;
+}
+
+.profile-main-user__info__button {
+  width: 135px;
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #14b349, #09a04f);
+  height: 30px;
+}
+
+.button-first {
+  margin-right: 16px;
+}

@@ -1,0 +1,22 @@
+.profile-main-user__notesAndDetails-content__notes-allNotes__singlenote {
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  border-left: 8px #1cb54f solid;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.singleNote-textAndDots {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.singleNote-noteAndDots__text {
+  margin-right: 16px;
+}
+
+.date-and-time {
+  color: #9ea0a3;
+}

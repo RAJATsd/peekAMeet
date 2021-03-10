@@ -1,8 +1,26 @@
 import MainSignInImage from "../../images/singin-main/group-18.png";
+import {useState} from 'react';
+import {connect} from 'react-redux';
 
+import {loginUserStartAsync} from '../../redux/user/user.actions';
 import "./login-main.styles.css";
 
-const LoginMain = () => {
+const LoginMain = ({loginUser}) => {
+  const [userForm,setUserForm] = useState({
+    email:null,
+    password : null
+  });
+
+  const handleFormChange = (event) => {
+    const {name,value} = event.target;
+    setUserForm({...userForm,[name]:value});
+  };
+
+  const handleUserLogin = (event) => {
+    event.preventDefault();
+    loginUser();
+  }
+
   return (
     <div className="login-page-main">
       <div className="login-page-main__image">
@@ -39,7 +57,9 @@ const LoginMain = () => {
                 type="email"
                 className="form-control"
                 id="email"
+                name="email"
                 placeholder="name@example.com"
+                onChange = {handleFormChange}
               />
             </div>
             <div>
@@ -50,9 +70,11 @@ const LoginMain = () => {
                 type="password"
                 className="form-control"
                 id="password"
+                name="password"
+                onChange={handleFormChange}
               ></input>
             </div>
-            <button type="submit" className="btn btn-success signin_button">
+            <button type="submit" className="btn btn-success signin_button" onClick={handleUserLogin}>
               SignIn
             </button>
           </form>
@@ -82,5 +104,9 @@ const LoginMain = () => {
   );
 };
 
-export default LoginMain;
+const mapDispatchToProps = (dispatch) => ({
+  loginUser:()=>dispatch(loginUserStartAsync())
+});
+
+export default connect(null,mapDispatchToProps)(LoginMain);
 

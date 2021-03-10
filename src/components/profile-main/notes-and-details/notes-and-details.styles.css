@@ -1,0 +1,45 @@
+.profile-main-user__notesAndDetails {
+  width: 100%;
+}
+
+.profile-main-user__notesAndDetails-switchbar {
+  border-bottom: solid 1px #9ea0a3;
+}
+
+.profile-main-user__notesAndDetails-switchbar__button {
+  border: none;
+  background: inherit;
+}
+
+.profile-main-user__notesAndDetails-content__details{
+  min-height: 288px;
+}
+
+.profile-main-user__notesAndDetails-content__details,
+.profile-main-user__notesAndDetails-content__notes {
+  display: none;
+}
+
+.active-button {
+  border-bottom: green 4px solid;
+}
+
+.active-tab {
+  display: block;
+}
+
+.profile-main-user__notesAndDetails-content__notes-addNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1cb54f;
+  margin: 15px 0;
+}
+
+.profile-main-user__notesAndDetails-content__notes-addNote:hover {
+  cursor: pointer;
+}
+
+.profile-main-user__notesAndDetails-content__notes-allNotes {
+  min-height: 228px;
+}
